@@ -1,8 +1,61 @@
 <!DOCTYPE html>
+<html lang="en"></html>
 <html>
    <head>
+      <title>Let me tell you a story...</title>
+      <link href="styles.css" type="text/css" rel="stylesheet" />
+      <script src="script.js"></script>
    </head>
+   <header style="background-image:url('975809-fantasy-art-castle-landscape.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:100% 140px;">
+      <h1>Choose Your Adventure</h1>
+   </header>
    <body>
-      <!-- Write your HTML in this file! -->
+      <main>
+         <article>
+            <h2>Enter the name of your hero:</h2>
+         <form id="nameform" action="">
+            <label for="fname">Character's first name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Character's last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit">
+         </form>
+         </article>
+         <article class="showcase">
+            <div id="firstparag1"></div>
+            <form id="rumors" class="rumors">
+               <input type="radio" id="demoncult" name="rumorchoice" value="demoncult" checked>
+               <label for="demoncult">Demon-worshipping cult</label><br>
+               <input type="radio" id="crazedwizard" name="rumorchoice" value="crazedwizard">
+               <label for="crazedwizard">Crazed wizard</label><br>
+               <input type="radio" id="goblinraiders" name="rumorchoice" value="goblinraiders">
+               <label for="goblinraiders">Goblin raiders</label><br>
+               <input type="submit" value="Submit">
+            </form>
+         </article>
+         <article id="firstchoice" class="firstchoice">
+            <div id="firstchoicep"></div>
+         </article>
+         <article id="diceroll" class="diceroll">
+            <button>Roll!</button>
+         </article>
+         <article id="diceresult" class="diceresult">
+            <div id="diceimage" style="background-color:white;height:150px;width:150px;padding:50px;border:solid 2px black;margin:auto;"></div>
+            <div id="diceresultp"></div>
+            <form id="lastchoice" class="lastchoice">
+               <input type="radio" id="diplomacy" name="lastchoice" value="diplomacy">
+               <label for="diplomacy">Diplomacy</label><br>
+               <input type="radio" id="force" name="lastchoice" value="force">
+               <label for="force">Force</label><br>
+               <input type="submit" value="Submit">
+            </form>
+         </article>
+         <article id="lastselect" class="lastselect">
+            <div id="lastresult"></div>
+         </article>
+
+      </main>
+
    </body>
+   <footer id="footer">all text &copy; Freya Waterbel 2023</footer>
 </html>
