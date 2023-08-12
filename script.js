@@ -18,6 +18,7 @@ window.addEventListener('load', function() {
 
         setTimeout(function () {
         }, 50);
+        footer.style.position = "relative"
         if (emptyName(firstName)) {
             return alert("Name fields are required!");
         } else if (emptyName(lastName)) {
@@ -167,6 +168,7 @@ window.addEventListener('load', function() {
     let lastChoice = document.getElementById("lastchoice");
     let lastSelect = document.getElementById("lastselect");
     let lastResult = document.getElementById("lastresult");
+    let footer = document.getElementById("footer");
 
     function rollTheDice() {
         return Math.ceil(Math.random()*6);
